@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View,Image,TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
+import CustomInput from '../components/CustomInput';
 
 const Login = () => {
 
@@ -14,6 +15,9 @@ const Login = () => {
       navigation.navigate('SplashScreen2');
     };
 
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
 
   return (
     
@@ -22,6 +26,24 @@ const Login = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
+
+
+      <CustomInput
+        placeholder="Username"
+        value={username}
+        setValue={setUsername}
+      />
+
+      <CustomInput
+        placeholder="Password"
+        value={password}
+        setValue={setPassword}
+        secureTextEntry={true}
+      />
+
+
+
+
     <Text style={styles.mainText}>Login Polution</Text>
     <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
     </View>
