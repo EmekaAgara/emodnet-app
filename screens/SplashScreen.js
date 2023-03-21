@@ -21,7 +21,7 @@ const SplashScreen = () => {
     
     <View style={styles.container}>
         <Image style={styles.image}
-            source={require('../assets/Square.png')}
+            source={require('../assets/pollution.png')}
         />
     <View style={styles.textcontainer}>
     <Text style={styles.mainText}>Eliminate Pollution</Text>

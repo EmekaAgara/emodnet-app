@@ -19,7 +19,7 @@ const SplashScreen1 = () => {
     
     <View style={styles.container}>
         <Image style={styles.image}
-            source={require('../assets/Square.png')}
+            source={require('../assets/map.png')}
         />
     <View style={styles.textcontainer}>
     <Text style={styles.mainText}>Visualize EMODNet Data</Text>

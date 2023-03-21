@@ -19,7 +19,7 @@ const SplashScreen2 = () => {
     
     <View style={styles.container}>
         <Image style={styles.image}
-            source={require('../assets/Square.png')}
+            source={require('../assets/incentives.png')}
         />
     <View style={styles.textcontainer}>
     <Text style={styles.mainText}>Get incentives</Text>
@@ -111,10 +111,9 @@ const styles = StyleSheet.create({
     },
 
     image:{
-        width:'100%',
-        height:'68%',
-        resizeMode:'cover'
-    }
-
+      width:'100%',
+      height:'68%',
+      resizeMode:'cover'
+  }
 
   });

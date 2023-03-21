@@ -19,11 +19,11 @@ const SplashScreen3 = () => {
     
     <View style={styles.container}>
         <Image style={styles.image}
-            source={require('../assets/Square.png')}
+            source={require('../assets/donation.png')}
         />
     <View style={styles.textcontainer}>
     <Text style={styles.mainText}>Engage the community</Text>
-    <Text style={styles.subText}>Engage the community, raise awareness of the issue of ocean pollution, and demonstrate the use eModnet data.</Text>
+    <Text style={styles.subText}>Engage the community, raise awareness about ocean pollution, and demonstrate the use of eModnet data.</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
             <Text style={styles.ButtonText}>Next</Text>

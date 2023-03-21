@@ -7,7 +7,7 @@ const SplashScreen4 = () => {
     const navigation = useNavigation();
 
     const onGetStartedPress = () => {
-      navigation.navigate('Welcome');
+      navigation.navigate('Login');
     };
 
     const onNextPress = () => {
@@ -19,14 +19,14 @@ const SplashScreen4 = () => {
     
     <View style={styles.container}>
         <Image style={styles.image}
-            source={require('../assets/Square.png')}
+            source={require('../assets/community.png')}
         />
     <View style={styles.textcontainer}>
     <Text style={styles.mainText}>Make Donations</Text>
     <Text style={styles.subText}>Contributions can be made towards a campaign aimed at cleaning up the Oceans and Reducing PLastic Litter</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
-            <Text style={styles.ButtonText}>Next</Text>
+            <Text style={styles.ButtonText}>Go Back</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={onGetStartedPress} style={styles.ButtonContainer}>
