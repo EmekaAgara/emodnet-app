@@ -7,7 +7,7 @@ const SplashScreen3 = () => {
     const navigation = useNavigation();
 
     const onGetStartedPress = () => {
-      navigation.navigate('Welcome');
+      navigation.navigate('Login');
     };
 
     const onNextPress = () => {
