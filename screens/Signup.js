@@ -38,7 +38,7 @@ const Signup = () => {
         
         
         />
-        <Text style={styles.title}>Create a NAVR account</Text>
+        <Text style={styles.title}>Create an account</Text>
         <CustomInput name="name" placeholder="Fullname" rules={{required:'Enter your Fullname',}}/>
         {/* <CustomInput name="username" placeholder="Username" rules={{required:'Enter your username',}}/> */}
         <CustomInput name="email" placeholder="Email address" rules={{required:'Enter your email address'}}/>
@@ -49,26 +49,6 @@ const Signup = () => {
         <CustomButton text="Have an account? Sign in" onPress={onSigninPressed} type="tertiary"/>
       </View>
     </SafeAreaView>
-
-
-    
-    // <View style={styles.container}>
-    //     <Image style={styles.image}
-    //         source={require('../assets/Square.png')}
-    //     />
-    // <View style={styles.textcontainer}>
-    // <Text style={styles.mainText}>Signup Polution</Text>
-    // <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
-    // </View>
-    //     <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
-    //         <Text style={styles.ButtonText}>Next</Text>
-    //     </TouchableOpacity>
-
-    //     <TouchableOpacity onPress={onGetStartedPress} style={styles.ButtonContainer}>
-    //         <Text style={styles.ButtonText}>Get Started</Text>
-    //     </TouchableOpacity>
-    
-    // </View>
   )
 }
 

@@ -23,7 +23,7 @@ const SplashScreen4 = () => {
         />
     <View style={styles.textcontainer}>
     <Text style={styles.mainText}>Make Donations</Text>
-    <Text style={styles.subText}>Contributions can be made to a campaign aimed at cleaning up the Oceans and Reducing PLastic Litter</Text>
+    <Text style={styles.subText}>Contributions can be made towards a campaign aimed at cleaning up the Oceans and Reducing PLastic Litter</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
             <Text style={styles.ButtonText}>Next</Text>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     },
 
     ButtonContainer: {
-        backgroundColor: "#2699E6",
+        backgroundColor: "#3B71F3",
         borderRadius: 5,
         paddingVertical: 20,
         paddingHorizontal: 10,

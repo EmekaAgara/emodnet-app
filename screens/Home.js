@@ -22,7 +22,7 @@ const Home = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
-    <Text style={styles.mainText}>Eliminating Polution</Text>
+    <Text style={styles.mainText}>home Polution</Text>
     <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>

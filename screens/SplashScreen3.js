@@ -22,7 +22,7 @@ const SplashScreen3 = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
-    <Text style={styles.mainText}>Community Engagement</Text>
+    <Text style={styles.mainText}>Engage the community</Text>
     <Text style={styles.subText}>Engage the community, raise awareness of the issue of ocean pollution, and demonstrate the use eModnet data.</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     },
 
     ButtonContainer: {
-        backgroundColor: "#2699E6",
+        backgroundColor: "#3B71F3",
         borderRadius: 5,
         paddingVertical: 20,
         paddingHorizontal: 10,

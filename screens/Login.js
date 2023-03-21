@@ -1,142 +1,73 @@
-import { StyleSheet, Text, View,Image,TouchableOpacity } from 'react-native'
-import React, { useState } from 'react'
+import { StyleSheet, Text, View,Image,TouchableOpacity, SafeAreaView, useWindowDimensions } from 'react-native'
+import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import CustomInput from '../components/CustomInput';
+import CustomInput from '../components/CustomInput'
+import CustomButton from '../components/CustomButton'
 
 const Login = () => {
 
+  const {height} = useWindowDimensions();
+
     const navigation = useNavigation();
 
-    const onGetStartedPress = () => {
-      navigation.navigate('WalletType');
+    const onSignupPressed = () => {
+      navigation.navigate('Signup');
     };
 
-    const onNextPress = () => {
-      navigation.navigate('SplashScreen2');
+    const onLoginPressed = () => {
+      navigation.navigate('Home');
     };
-
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
 
 
   return (
-    
-    <View style={styles.container}>
-        <Image style={styles.image}
-            source={require('../assets/Square.png')}
+
+
+    <SafeAreaView>
+      <View style={styles.root}>
+        <Image
+          source={require('../assets/Square.png')}
+          style={[styles.logo, {height:height * 0.3}]}
+        
+        
         />
-    <View style={styles.textcontainer}>
-
-
-      <CustomInput
-        placeholder="Username"
-        value={username}
-        setValue={setUsername}
-      />
-
-      <CustomInput
-        placeholder="Password"
-        value={password}
-        setValue={setPassword}
-        secureTextEntry={true}
-      />
-
-
-
-
-    <Text style={styles.mainText}>Login Polution</Text>
-    <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
-    </View>
-        <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
-            <Text style={styles.ButtonText}>Next</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity onPress={onGetStartedPress} style={styles.ButtonContainer}>
-            <Text style={styles.ButtonText}>Get Started</Text>
-        </TouchableOpacity>
-    
-    </View>
+        <Text style={styles.title}>Login to your account</Text>
+        {/* <CustomInput name="name" placeholder="Fullname" rules={{required:'Enter your Fullname',}}/> */}
+        {/* <CustomInput name="username" placeholder="Username" rules={{required:'Enter your username',}}/> */}
+        <CustomInput name="email" placeholder="Email address" rules={{required:'Enter your email address'}}/>
+        <CustomInput name="password" placeholder="Password" secureTextEntry rules={{required:'Enter your password',}} />
+        {/* <CustomInput name="password-repeat" placeholder="Confirm Password" secureTextEntry rules={{validate: value => value === pwd || 'Passwords do not match',}} /> */}
+        <CustomButton text="Login" onPress={onLoginPressed}/>
+        {/* <Text style={styles.text}>By creating an account, you confirm that you have accepted our{' '}<Text style={styles.link} onPress={onTermsOfUsePressed}>Terms of use</Text> and <Text style={styles.link} onPress={onPrivacyPolicyPressed}>Privacy Policy</Text></Text> */}
+        <CustomButton text="Have an account? Sign up" onPress={onSignupPressed} type="tertiary"/>
+      </View>
+    </SafeAreaView>
   )
 }
 
 export default Login
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-    },
+  root: {
+    alignItems:'center',
+    padding:20,
+  },
 
-    textcontainer: {
-        backgroundColor: '#fff',
-        // alignItems: 'left',
-    },  
+  title:{
+    fontSize:24,
+    fontWeight:'bold',
+    color:'black',
+    margin:10,
+  },
 
-    mainText:{
-        color:'black',
-        fontSize:22,
-        fontWeight:700,
-        textAlign:'left',
-        paddingBottom:10,
-        paddingTop:20,
-        paddingHorizontal:'8%',
-    },
+  text:{
+    color:'gray',
+    marginVertical:10,
 
-    subText:{
-        color:'white',
-        fontSize:13,
-        fontWeight:500,
-        textAlign:'left', 
-        paddingHorizontal:'8%',
-        color:'#818589',
-        lineHeight:20,
-        paddingBottom:20,
-    },
+  },
 
-    ButtonContainer: {
-        backgroundColor: "#2699E6",
-        borderRadius: 5,
-        paddingVertical: 20,
-        paddingHorizontal: 10,
-        width:'85%'
+  link:{
+    color:'#4765A9'
 
-    },
+  }
 
-    SecButtonContainer: {
-      backgroundColor: "#E63B60",
-      borderRadius: 5,
-      paddingVertical: 20,
-      paddingHorizontal: 140,
-      width:'85%',
-      marginBottom:10,
-    },
-
-
-    TetButtonContainer: {
-        borderWidth:0.5,
-        borderColor:'white',
-        borderRadius: 5,
-        paddingVertical: 20,
-        paddingHorizontal: 140,
-        width:'85%',
-        marginBottom:10,
-    },
-      
-
-
-    ButtonText: {
-        fontSize: 15,
-        color: "#fff",
-        fontWeight: 500,
-        alignSelf: "center",
-    },
-
-    image:{
-        width:'100%',
-        height:'68%',
-        resizeMode:'cover'
-    }
-
-
-  });
+});
