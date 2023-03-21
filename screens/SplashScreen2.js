@@ -11,7 +11,7 @@ const SplashScreen2 = () => {
     };
 
     const onNextPress = () => {
-      navigation.navigate('SplashScreen2');
+      navigation.navigate('SplashScreen3');
     };
 
 
@@ -22,8 +22,8 @@ const SplashScreen2 = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
-    <Text style={styles.mainText}>Eliminating Polution</Text>
-    <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
+    <Text style={styles.mainText}>Get incentives</Text>
+    <Text style={styles.subText}>Get incentives for adding fresh data and insights, running campaigns, and engaging in them.</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
             <Text style={styles.ButtonText}>Next</Text>
