@@ -22,8 +22,8 @@ const SplashScreen1 = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
-    <Text style={styles.mainText}>Eliminating Polution</Text>
-    <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
+    <Text style={styles.mainText}>Visualize EMODNet Data</Text>
+    <Text style={styles.subText}>Interact with EMODNet Data and suggest updates about the current situation in your Location</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
             <Text style={styles.ButtonText}>Next</Text>
