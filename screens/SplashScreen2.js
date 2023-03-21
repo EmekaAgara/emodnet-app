@@ -7,7 +7,7 @@ const SplashScreen2 = () => {
     const navigation = useNavigation();
 
     const onGetStartedPress = () => {
-      navigation.navigate('WalletType');
+      navigation.navigate('Welcome');
     };
 
     const onNextPress = () => {

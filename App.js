@@ -13,6 +13,9 @@ import SplashScreen2 from './screens/SplashScreen2';
 import SplashScreen3 from './screens/SplashScreen3';
 import SplashScreen4 from './screens/SplashScreen4';
 import Welcome from './screens/Welcome';
+import Home from './screens/Home';
+import Login from './screens/Login';
+import Signup from './screens/Signup';
 
 
 export default function App() {
@@ -70,6 +73,39 @@ export default function App() {
             headerShown:false,
             }}
           />
+
+          <Stack.Screen
+            name='Login'
+            component={Login}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+          <Stack.Screen
+            name='Signup'
+            component={Signup}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+          <Stack.Screen
+            name='Home'
+            component={Home}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+{/* <Stack.Screen
+            name='Welcome'
+            component={Welcome}
+            options={{
+            headerShown:false,
+            }}
+          /> */}
+
 
         </Stack.Navigator>
       </SafeAreaProvider>

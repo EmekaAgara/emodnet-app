@@ -7,11 +7,11 @@ const Welcome = () => {
     const navigation = useNavigation();
 
     const onGetStartedPress = () => {
-      navigation.navigate('WalletType');
+      navigation.navigate('Signup');
     };
 
     const onNextPress = () => {
-      navigation.navigate('SplashScreen2');
+      navigation.navigate('Login');
     };
 
 
@@ -22,15 +22,15 @@ const Welcome = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
-    <Text style={styles.mainText}>Eliminating Polution</Text>
-    <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
+    <Text style={styles.mainText}>Ready to Get Started ?</Text>
+    {/* <Text style={styles.subText}>Reducing plastic litter at sea by using EMODNet data and by rewarding campaign participants</Text> */}
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
-            <Text style={styles.ButtonText}>Next</Text>
+            <Text style={styles.ButtonText}>Login</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={onGetStartedPress} style={styles.ButtonContainer}>
-            <Text style={styles.ButtonText}>Get Started</Text>
+            <Text style={styles.ButtonText}>Create an account</Text>
         </TouchableOpacity>
     
     </View>

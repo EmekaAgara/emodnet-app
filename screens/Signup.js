@@ -2,12 +2,12 @@ import { StyleSheet, Text, View,Image,TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
-const SplashScreen1 = () => {
+const Signup = () => {
 
     const navigation = useNavigation();
 
     const onGetStartedPress = () => {
-      navigation.navigate('Welcome');
+      navigation.navigate('WalletType');
     };
 
     const onNextPress = () => {
@@ -22,8 +22,8 @@ const SplashScreen1 = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
-    <Text style={styles.mainText}>Visualize EMODNet Data</Text>
-    <Text style={styles.subText}>Interact with EMODNet Data and suggest updates about the current situation in your Location</Text>
+    <Text style={styles.mainText}>Signup Polution</Text>
+    <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
             <Text style={styles.ButtonText}>Next</Text>
@@ -37,7 +37,7 @@ const SplashScreen1 = () => {
   )
 }
 
-export default SplashScreen1
+export default Signup
 
 const styles = StyleSheet.create({
     container: {

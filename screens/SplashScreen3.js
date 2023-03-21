@@ -7,11 +7,11 @@ const SplashScreen3 = () => {
     const navigation = useNavigation();
 
     const onGetStartedPress = () => {
-      navigation.navigate('WalletType');
+      navigation.navigate('Welcome');
     };
 
     const onNextPress = () => {
-      navigation.navigate('SplashScreen2');
+      navigation.navigate('SplashScreen4');
     };
 
 
@@ -22,8 +22,8 @@ const SplashScreen3 = () => {
             source={require('../assets/Square.png')}
         />
     <View style={styles.textcontainer}>
-    <Text style={styles.mainText}>Eliminating Polution</Text>
-    <Text style={styles.subText}>Eliminating pollution of our seas, waters, and Oceans by rewarding campaign participants</Text>
+    <Text style={styles.mainText}>Community Engagement</Text>
+    <Text style={styles.subText}>Engage the community, raise awareness of the issue of ocean pollution, and demonstrate the use eModnet data.</Text>
     </View>
         <TouchableOpacity onPress={onNextPress} style={styles.SecButtonContainer}>
             <Text style={styles.ButtonText}>Next</Text>
