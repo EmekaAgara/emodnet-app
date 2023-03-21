@@ -2,16 +2,16 @@ import { StyleSheet, Text, View,Image,TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
-const SplashScreen = () => {
+const SplashScreen1 = () => {
 
     const navigation = useNavigation();
 
     const onGetStartedPress = () => {
-      navigation.navigate('Welcome');
+      navigation.navigate('WalletType');
     };
 
     const onNextPress = () => {
-      navigation.navigate('SplashScreen1');
+      navigation.navigate('SplashScreen2');
     };
 
 
@@ -37,7 +37,7 @@ const SplashScreen = () => {
   )
 }
 
-export default SplashScreen
+export default SplashScreen1
 
 const styles = StyleSheet.create({
     container: {
