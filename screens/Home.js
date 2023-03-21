@@ -114,7 +114,7 @@ const HomeOperationalWallet = () => {
 
     <View style={styles.container} behavior="padding">
 
-    {/* <Text style={styles.HelloText}>Good day, Admin</Text> */}
+    <Text style={styles.HelloText}>Good day, Admin</Text>
 
       <FlatList
       data={data}
