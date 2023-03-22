@@ -7,16 +7,16 @@ const data = [
   {
     id:"1",
     image:require('../assets/pollution.png'),
-    title:"Create a yyyyyyyyycampaign",
-    description:"Create a new operational",
+    title:"Create a campaign",
+    description:"Create a beach/seabed litter cleaning event",
     screen:"NewOpWallet"
   },
 
   {
     id:"2",
     image:require('../assets/pollution.png'),
-    title:"Join a ggggggggggggggggCampaign",
-    description:"Send XRP",
+    title:"Join a Campaign",
+    description:"Join a beach/seabed litter cleaning event",
     screen:"OperationalAccount"
   },
 
@@ -24,7 +24,7 @@ const data = [
     id:"3",
     image:require('../assets/pollution.png'),
     title:"Trending Locations",
-    description:"between accounts",
+    description:"View trending Locations with beach and seabed litter",
     screen:"CreateTrustlineOp"
   },
 
@@ -32,15 +32,15 @@ const data = [
     id:"4",
     image:require('../assets/pollution.png'),
     title:"Historical Data",
-    description:"Mint, burn",
+    description:"Explore EMODNET data on beach/seabed litter",
     screen:"NftsOw"
   },
 
   {
     id:"5",
     image:require('../assets/pollution.png'),
-    title:"Post an update",
-    description:"Get new",
+    title:"Submit new data",
+    description:"Submit new insights about beach/seabed litter",
     screen:"MyOpWallet"
   },
 
@@ -48,7 +48,7 @@ const data = [
     id:"6",
     image:require('../assets/pollution.png'),
     title:"Make Donation",
-    description:"Get new",
+    description:"Make donations to beach/seabed litter cleaaning event",
     screen:"MyOpWallet"
   },
 
@@ -56,15 +56,15 @@ const data = [
     id:"7",
     image:require('../assets/pollution.png'),
     title:"Join a Community",
-    description:"Get new",
+    description:"Create awareness about beach and seabed litter ",
     screen:"MyOpWallet"
   },
 
   {
     id:"8",
     image:require('../assets/pollution.png'),
-    title:"My Rewards",
-    description:"Get new",
+    title:"My Profile",
+    description:"My profile, participation and  achievements",
     screen:"MyOpWallet"
   },
 
@@ -72,7 +72,7 @@ const data = [
     id:"9",
     image:require('../assets/pollution.png'),
     title:"Near Me",
-    description:"Get new",
+    description:"Beach and seabed litter events near you",
     screen:"MyOpWallet"
   },
 
@@ -80,7 +80,7 @@ const data = [
     id:"10",
     image:require('../assets/pollution.png'),
     title:"Logout",
-    description:"Get new",
+    description:"Logout of your SER acccount",
     screen:"MyOpWallet"
   }
 ]
@@ -144,7 +144,8 @@ const styles = StyleSheet.create({
     paddingBottom:30,
     paddingTop:60,
     padding:6,
-    paddingHorizontal:10
+    paddingHorizontal:10,
+    
   },
 
 
@@ -173,15 +174,13 @@ const styles = StyleSheet.create({
     fontWeight:700,
     textAlign:'left',
     paddingBottom:5,
-    // paddingLeft:90,
   },
 
   descText:{
     color:'#898A8B',
-    fontSize:14,
+    fontSize:12,
     fontWeight:300,
     textAlign:'left',
-    // paddingLeft:90,
 },
 
   ButtonContainer: {
@@ -192,8 +191,8 @@ const styles = StyleSheet.create({
     marginBottom:10,
     marginRight:10,
     maxWidth:'50%',
-    // maxHeight:'100%'
-    
+    justifyContent: 'center',
+    flex: 1, 
 },
 
 CardContainer: {
@@ -202,7 +201,7 @@ CardContainer: {
   paddingVertical: 20,
   paddingHorizontal: 140,
   marginBottom:10,
-  height:100,  
+  height:100, 
 },
 
 });
