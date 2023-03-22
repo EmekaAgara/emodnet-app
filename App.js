@@ -16,6 +16,9 @@ import Welcome from './screens/Welcome';
 import Home from './screens/Home';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
+import CreateCampaign from './screens/CreateCampaign';
+import Campaigns from './screens/Campaigns';
+import CampaignSuccessfull from './screens/CampaignSuccessfull';
 
 
 export default function App() {
@@ -98,13 +101,34 @@ export default function App() {
             }}
           />
 
-{/* <Stack.Screen
-            name='Welcome'
-            component={Welcome}
+          <Stack.Screen
+            name='CreateCampaign'
+            component={CreateCampaign}
+            options={{
+            headerShown:true,
+            title: 'Create Campaign',
+            headerStyle: {
+              backgroundColor: '#fff'
+            },
+            headerTintColor: 'black',
+            }}
+          />
+
+          <Stack.Screen
+            name='Campaigns'
+            component={Campaigns}
             options={{
             headerShown:false,
             }}
-          /> */}
+          />
+
+          <Stack.Screen
+            name='CampaignSuccessfull'
+            component={CampaignSuccessfull}
+            options={{
+            headerShown:false,
+            }}
+            />
 
 
         </Stack.Navigator>

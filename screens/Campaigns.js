@@ -11,7 +11,7 @@ const data = [
     image:require('../assets/pollution.png'),
     title:"Create a campaign",
     description:"Create a beach/seabed litter cleaning event",
-    screen:"CreateCampaign"
+    screen:"NewOpWallet"
   },
 
   {
@@ -19,7 +19,7 @@ const data = [
     image:require('../assets/pollution.png'),
     title:"Join a Campaign",
     description:"Join a beach/seabed litter cleaning event",
-    screen:"Campaigns"
+    screen:"OperationalAccount"
   },
 
   {
@@ -88,7 +88,7 @@ const data = [
 ]
 
 
-const Home = () => {
+const Campaigns = () => {
     
     const navigation = useNavigation();
 
@@ -116,7 +116,7 @@ const Home = () => {
 
     <View style={styles.container} behavior="padding">
 
-    <Text style={styles.HelloText}>Good day, Admin</Text>
+    <Text style={styles.HelloText}>campaignss</Text>
     <Text style={styles.descText1}>Select an option to get started</Text>
 
       <FlatList
@@ -137,7 +137,7 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Campaigns
 
 const styles = StyleSheet.create({
   container: {
