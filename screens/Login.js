@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   root: {
     alignItems:'center',
     padding:20,
-    paddingTop:180,
+    paddingTop:'40%',
   },
 
   logo:{
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     maxHeight:150,
     borderRadius:10,
     resizeMode:'cover',
-    alignSelf:'left',
+    alignSelf:'flex-start',
   },
 
   title:{
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     color:'black',
     margin:10,
-    alignSelf:'left',
+    alignSelf:'flex-start',
   },
 
   text:{

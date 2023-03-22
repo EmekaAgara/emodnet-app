@@ -1,7 +1,9 @@
-import { StyleSheet, Text, View,Image,TextInput, KeyboardAvoidingView,TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View,Image,TextInput, KeyboardAvoidingView,TouchableOpacity, ImageBackground } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { FlatList } from 'react-native';
+
+
 
 const data = [
   {
@@ -115,6 +117,7 @@ const HomeOperationalWallet = () => {
     <View style={styles.container} behavior="padding">
 
     <Text style={styles.HelloText}>Good day, Admin</Text>
+    <Text style={styles.descText1}>Select an option to get started</Text>
 
       <FlatList
       data={data}
@@ -143,18 +146,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingBottom:30,
     paddingTop:60,
-    padding:6,
-    paddingHorizontal:10,
-    
+    paddingLeft:10,
   },
-
 
   HelloText:{
     color:'black',
     fontSize:25,
-    fontWeight:700,
+    fontWeight:500,
     textAlign:'left',
-    paddingBottom:20
+    paddingBottom:6
 },
 
   cardImage: {
@@ -182,6 +182,15 @@ const styles = StyleSheet.create({
     fontWeight:300,
     textAlign:'left',
 },
+
+descText1:{
+  color:'#898A8B',
+  fontSize:14,
+  fontWeight:300,
+  textAlign:'left',
+  paddingBottom:20
+},
+
 
   ButtonContainer: {
     backgroundColor: "#141518",
