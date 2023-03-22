@@ -45,7 +45,7 @@ const data = [
   },
 
   {
-    id:"5",
+    id:"6",
     image:require('../assets/pollution.png'),
     title:"Make Donation",
     description:"Get new",
@@ -53,7 +53,7 @@ const data = [
   },
 
   {
-    id:"5",
+    id:"7",
     image:require('../assets/pollution.png'),
     title:"Join a Community",
     description:"Get new",
@@ -61,7 +61,7 @@ const data = [
   },
 
   {
-    id:"5",
+    id:"8",
     image:require('../assets/pollution.png'),
     title:"My Rewards",
     description:"Get new",
@@ -69,7 +69,7 @@ const data = [
   },
 
   {
-    id:"5",
+    id:"9",
     image:require('../assets/pollution.png'),
     title:"Near Me",
     description:"Get new",
@@ -77,7 +77,7 @@ const data = [
   },
 
   {
-    id:"5",
+    id:"10",
     image:require('../assets/pollution.png'),
     title:"Logout",
     description:"Get new",
