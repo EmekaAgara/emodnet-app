@@ -25,19 +25,13 @@ const Login = () => {
     <SafeAreaView>
       <View style={styles.root}>
         <Image
-          source={require('../assets/Square.png')}
-          style={[styles.logo, {height:height * 0.3}]}
-        
-        
+          source={require('../assets/SER.png')}
+          style={[styles.logo, {height:height * 0.2}]}
         />
         <Text style={styles.title}>Login to your account</Text>
-        {/* <CustomInput name="name" placeholder="Fullname" rules={{required:'Enter your Fullname',}}/> */}
-        {/* <CustomInput name="username" placeholder="Username" rules={{required:'Enter your username',}}/> */}
         <CustomInput name="email" placeholder="Email address" rules={{required:'Enter your email address'}}/>
         <CustomInput name="password" placeholder="Password" secureTextEntry rules={{required:'Enter your password',}} />
-        {/* <CustomInput name="password-repeat" placeholder="Confirm Password" secureTextEntry rules={{validate: value => value === pwd || 'Passwords do not match',}} /> */}
         <CustomButton text="Login" onPress={onLoginPressed}/>
-        {/* <Text style={styles.text}>By creating an account, you confirm that you have accepted our{' '}<Text style={styles.link} onPress={onTermsOfUsePressed}>Terms of use</Text> and <Text style={styles.link} onPress={onPrivacyPolicyPressed}>Privacy Policy</Text></Text> */}
         <CustomButton text="Have an account? Sign up" onPress={onSignupPressed} type="tertiary"/>
       </View>
     </SafeAreaView>
@@ -50,6 +44,16 @@ const styles = StyleSheet.create({
   root: {
     alignItems:'center',
     padding:20,
+    paddingTop:180,
+  },
+
+  logo:{
+    width:'70%',
+    maxWidth:150,
+    maxHeight:150,
+    borderRadius:10,
+    resizeMode:'cover',
+    alignSelf:'left',
   },
 
   title:{
@@ -57,6 +61,7 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     color:'black',
     margin:10,
+    alignSelf:'left',
   },
 
   text:{

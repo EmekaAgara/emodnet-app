@@ -33,10 +33,8 @@ const Signup = () => {
     <SafeAreaView>
       <View style={styles.root}>
         <Image
-          source={require('../assets/Square.png')}
-          style={[styles.logo, {height:height * 0.3}]}
-        
-        
+          source={require('../assets/SER.png')}
+          style={[styles.logo, {height:height * 0.2}]}
         />
         <Text style={styles.title}>Create an account</Text>
         <CustomInput name="name" placeholder="Fullname" rules={{required:'Enter your Fullname',}}/>
@@ -65,6 +63,16 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     color:'black',
     margin:10,
+    alignSelf:'left',
+  },
+
+  logo:{
+    width:'70%',
+    maxWidth:150,
+    maxHeight:150,
+    borderRadius:10,
+    resizeMode:'cover',
+    alignSelf:'left',
   },
 
   text:{
