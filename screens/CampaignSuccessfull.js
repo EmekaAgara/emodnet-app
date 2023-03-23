@@ -1,7 +1,5 @@
 import { Image,Dimensions, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState, useEffect } from 'react'
-import { COLORS, Items } from '../components/Database'
-import Entypo from 'react-native-vector-icons/Entypo'
 import { useNavigation } from '@react-navigation/native'
 import CustomButton from '../components/CustomButton'
 
@@ -21,7 +19,7 @@ const CampaignSuccessfull = () => {
     style={{
       width:'100%',
       height:'100%',
-      backgroundColor:COLORS.white,
+      backgroundColor:'white',
     }}>
 
 
@@ -39,7 +37,7 @@ const CampaignSuccessfull = () => {
       }}>
       <Text style={{
         fontSize:25,
-        color:COLORS.black,
+        color:'black',
         fontWeight:'500',
         letterSpacing:1,
         marginBottom:10,
@@ -49,7 +47,7 @@ const CampaignSuccessfull = () => {
 
       <Text style={{
         fontSize:14,
-        color:COLORS.black,
+        color:'black',
         fontWeight:'400',
         letterSpacing:1,
         lineHeight:24,
