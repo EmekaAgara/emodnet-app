@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View,Image,TextInput, KeyboardAvoidingView,TouchableOpacity, ImageBackground } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View,Image,TextInput, KeyboardAvoidingView,TouchableOpacity, ImageBackground, ScrollView, SafeAreaView } from 'react-native'
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
-import { FlatList } from 'react-native';
+
+
 
 
 
