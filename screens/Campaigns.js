@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View,Image,TextInput, KeyboardAvoidingView,TouchableOpacity, ImageBackground, ScrollView, SafeAreaView } from 'react-native'
+import { StyleSheet, Text, View,Image,TextInput, KeyboardAvoidingView,TouchableOpacity, ImageBackground, ScrollView, SafeAreaView, FlatList } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
+import Campaign from '../components/Campaign'
 
 
 
@@ -120,6 +121,9 @@ const Campaigns = () => {
     <Text style={styles.HelloText}>campaignss</Text>
     <Text style={styles.descText1}>Select an option to get started</Text>
 
+      <Campaign/>
+
+
       <FlatList
       data={data}
       keyExtractor={(item) => item.id}
@@ -146,8 +150,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     justifyContent: 'center',
     paddingBottom:30,
-    paddingTop:60,
-    paddingLeft:10,
+    paddingTop:40,
+    paddingHorizontal:20,
   },
 
   HelloText:{
