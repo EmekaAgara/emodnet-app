@@ -3,90 +3,107 @@ import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import Campaign from '../components/Campaign'
 
-
-
-
-
 const data = [
   {
     id:"1",
-    image:require('../assets/pollution.png'),
-    title:"Create a campaign",
-    description:"Create a beach/seabed litter cleaning event",
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
     screen:"NewOpWallet"
   },
 
   {
     id:"2",
-    image:require('../assets/pollution.png'),
-    title:"Join a Campaign",
-    description:"Join a beach/seabed litter cleaning event",
-    screen:"OperationalAccount"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"3",
-    image:require('../assets/pollution.png'),
-    title:"Trending Locations",
-    description:"View trending Locations with beach and seabed litter",
-    screen:"CreateTrustlineOp"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"4",
-    image:require('../assets/pollution.png'),
-    title:"Historical Data",
-    description:"Explore EMODNET data on beach/seabed litter",
-    screen:"NftsOw"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"5",
-    image:require('../assets/pollution.png'),
-    title:"Submit new data",
-    description:"Submit new insights about beach/seabed litter",
-    screen:"MyOpWallet"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"6",
-    image:require('../assets/pollution.png'),
-    title:"Make Donation",
-    description:"Make donations to beach/seabed litter cleaaning event",
-    screen:"MyOpWallet"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"7",
-    image:require('../assets/pollution.png'),
-    title:"Join a Community",
-    description:"Create awareness about beach and seabed litter ",
-    screen:"MyOpWallet"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"8",
-    image:require('../assets/pollution.png'),
-    title:"My Profile",
-    description:"My profile, participation and  achievements",
-    screen:"MyOpWallet"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"9",
-    image:require('../assets/pollution.png'),
-    title:"Near Me",
-    description:"Beach and seabed litter events near you",
-    screen:"MyOpWallet"
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
   },
 
   {
     id:"10",
-    image:require('../assets/pollution.png'),
-    title:"Logout",
-    description:"Logout of your SER acccount",
-    screen:"MyOpWallet"
-  }
+    image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+    category:"Sea Bed Litter Cleaning",
+    title:"Expedition spain july 26th",
+    description:"Join us in cleaning up the sea bed litter in june in cleaning up the sea bed litter in june ...",
+    raised:"$100 Raised - 20 participants",
+    screen:"NewOpWallet"
+  },
+
 ]
 
 
@@ -98,41 +115,31 @@ const Campaigns = () => {
       navigation.navigate('NewOpWallet');
     };
 
-    const onOperationalAccountPress = () => {
-      navigation.navigate('OperationalAccount');
-    };
-
-    const onCreateTlOwPress = () => {
-      navigation.navigate('CreateTrustlineOp');
-    };
-
-    const onNftsPress = () => {
-      navigation.navigate('NftsOw');
-    };
-
-    const onWalletPress = () => {
-      navigation.navigate('MyOpWallet');
-    };
 
   return (
 
     <View style={styles.container} behavior="padding">
 
-    <Text style={styles.HelloText}>campaignss</Text>
+    <Text style={styles.HelloText}>Good day, Admin</Text>
     <Text style={styles.descText1}>Select an option to get started</Text>
-
-      <Campaign/>
-
 
       <FlatList
       data={data}
       keyExtractor={(item) => item.id}
-      numColumns={2}
+      showsVerticalScrollIndicator={false}
       renderItem={({ item }) => (
 
-        <TouchableOpacity onPress={() => navigation.navigate(item.screen)} style={styles.ButtonContainer}>
-         <Text style={styles.mainText}>{item.title}</Text>
-        <Text style={styles.descText}>{item.description}</Text>
+        <TouchableOpacity onPress={() => navigation.navigate(item.screen)}>
+        <Image
+        style={styles.image}
+        source={{uri:item.image}}
+      />
+
+      <Text style={styles.textcontainer}>{item.category}</Text>
+      <Text style={styles.Maintext}>{item.title}</Text>   
+      <Text style={styles.description}>{item.description}</Text>
+      <Text style={styles.midText2}>{item.raised}</Text>
+
      </TouchableOpacity>
       )}
 
@@ -146,11 +153,9 @@ export default Campaigns
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#FFF',
     justifyContent: 'center',
-    paddingBottom:30,
-    paddingTop:40,
+    paddingTop:'15%',
     paddingHorizontal:20,
   },
 
@@ -162,31 +167,6 @@ const styles = StyleSheet.create({
     paddingBottom:6
 },
 
-  cardImage: {
-    padding: 55,
-    margin:20,
-    paddingBottom:30,
-    height: 35,
-    width: 35,
-    resizeMode: 'contain',
-    alignSelf: 'flex-start',
-    position: 'absolute',
-  },
-
-  mainText:{
-    color:'white',
-    fontSize:16,
-    fontWeight:700,
-    textAlign:'left',
-    paddingBottom:5,
-  },
-
-  descText:{
-    color:'#898A8B',
-    fontSize:12,
-    fontWeight:300,
-    textAlign:'left',
-},
 
 descText1:{
   color:'#898A8B',
@@ -196,26 +176,32 @@ descText1:{
   paddingBottom:20
 },
 
-
-  ButtonContainer: {
-    backgroundColor: "#141518",
-    borderRadius: 5,
-    paddingVertical: 40,
-    paddingHorizontal: 20,
-    marginBottom:10,
-    marginRight:10,
-    maxWidth:'50%',
-    justifyContent: 'center',
-    flex: 1, 
+image:{
+  width:'100%',
+  aspectRatio:3/1.5,
+  resizeMode:'cover',
+  borderRadius:7,
 },
 
-CardContainer: {
-  backgroundColor: "#5659C6",
-  borderRadius: 5,
-  paddingVertical: 20,
-  paddingHorizontal: 140,
-  marginBottom:10,
-  height:100, 
+Maintext:{
+  fontWeight:700,
+  fontSize:18
+},
+
+midText2:{
+  fontWeight:500,
+  paddingBottom:30
+},
+
+textcontainer:{
+  paddingVertical:5,
+  fontWeight:700,
+  color:'#528CFD'  
+},
+
+description:{
+  paddingVertical:5,
+  color:'gray'
 },
 
 });
