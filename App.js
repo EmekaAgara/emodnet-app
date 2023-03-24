@@ -19,6 +19,7 @@ import Signup from './screens/Signup';
 import CreateCampaign from './screens/CreateCampaign';
 import Campaigns from './screens/Campaigns';
 import CampaignSuccessfull from './screens/CampaignSuccessfull';
+import Campaign from './screens/Campaign';
 
 
 export default function App() {
@@ -128,7 +129,15 @@ export default function App() {
             options={{
             headerShown:false,
             }}
-            />
+          />
+
+          <Stack.Screen
+            name='Campaign'
+            component={Campaign}
+            options={{
+            headerShown:false,
+            }}
+          />
 
 
         </Stack.Navigator>
