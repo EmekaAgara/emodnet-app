@@ -20,6 +20,7 @@ import CreateCampaign from './screens/CreateCampaign';
 import Campaigns from './screens/Campaigns';
 import CampaignSuccessfull from './screens/CampaignSuccessfull';
 import Campaign from './screens/Campaign';
+import SignupOrganization from './screens/SignupOrganization';
 
 
 export default function App() {
@@ -89,6 +90,14 @@ export default function App() {
           <Stack.Screen
             name='Signup'
             component={Signup}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+          <Stack.Screen
+            name='SignupOrganization'
+            component={SignupOrganization}
             options={{
             headerShown:false,
             }}
